@@ -1,34 +1,44 @@
-function Fail({ name = "Unkown", color = "red", marks }) {
+// function Fail({ name = "Unkown", color = "red", marks }) {
+//   return (
+//     <div>
+//       {marks === undefined ? (
+//         <h1>Marks are not uploaded yet!</h1>
+//       ) : (
+//         <div>
+//           <h1 style={{ color: color }}>Fail!</h1>
+//           <p>
+//             Mr/Mrs {name} your marks are {marks}{" "}
+//           </p>
+//         </div>
+//       )}
+//     </div>
+//   );
+// }
+
+// export default Fail;
+
+function Fail({ name = "Unknown", color = "red", marks }) {
   return (
-    <div>
+    <div className="border bg-gray-300 p-4 mx-5 mt-4 rounded">
       {marks === undefined ? (
-        <h1>Marks are not uploaded yet!</h1>
+        <h1 className="text-red-600 text-lg">Marks are not uploaded yet!</h1>
       ) : (
-        <div>
-          <h1 style={{ color: color }}>Fail!</h1>
-          <p>
-            Mr/Mrs {name} your marks are {marks}{" "}
+        <>
+          <h1 className="text-xl font-semibold" style={{ color }}>
+            Fail
+          </h1>
+
+          <p className="mt-2">
+            Mr/Mrs <span className="font-medium">{name}</span>
           </p>
-        </div>
+
+          <p>
+            Marks: <span className="font-medium">{marks}</span>
+          </p>
+        </>
       )}
     </div>
   );
 }
-
-// function Fail({ name = "Unkown", color = "red", marks }) {
-
-//   if (marks === undefined) {
-//     return <h1>Marks are not uploaded yet!</h1>;
-//   }
-
-//   return (
-//     <div>
-//       <h1 style={{ color: color }}>Fail!</h1>
-//       <p>
-//         Mr/Mrs {name} your marks are {marks}{" "}
-//       </p>
-//     </div>
-//   );
-// }
 
 export default Fail;

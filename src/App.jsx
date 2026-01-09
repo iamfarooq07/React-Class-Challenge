@@ -21,7 +21,7 @@ let students = [
   {
     name: "Usman",
     marks: 25,
-    color: "pink",
+    color: "blue",
   },
   {
     name: "Bilal",
@@ -36,7 +36,7 @@ let students = [
   {
     name: "Hamza",
     marks: 35,
-    color: "pink",
+    color: "red",
   },
   {
     name: "Fahad",
@@ -67,10 +67,16 @@ function App() {
 
   return (
     <>
-      <div>
-        <button onClick={onPass}>Pass Data</button>
-        <button onClick={onFail}>Fail Data</button>
-        <button onClick={onReset}>Reset Data</button>
+      <div className="flex justify-between my-2 mx-5 p-4">
+        <button onClick={onPass} className="bg-green-300 px-4 py-2 rounded-md">
+          Pass Data
+        </button>
+        <button onClick={onFail} className="bg-red-300 px-4 py-2 rounded-md">
+          Fail Data
+        </button>
+        <button onClick={onReset} className="bg-gray-300 px-4 py-2 rounded-md">
+          Reset Data
+        </button>
       </div>
       <Results students={student} />
     </>
