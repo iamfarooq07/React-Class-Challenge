@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Result from "./components/Result";
 import Results from "./components/Results";
 
-let students = [
+let allStudent = [
   {
     name: "Ali",
     marks: 40,
@@ -46,21 +46,21 @@ let students = [
 ];
 
 function App() {
-  const [student, setStudent] = useState(students);
+  const [student, setStudent] = useState(allStudent);
 
   const onReset = () => {
     console.log("clicked me");
 
-    setStudent(students);
+    setStudent(allStudent);
   };
 
   const onPass = () => {
-    let passData = students.filter((n) => n.marks > 50);
+    let passData = allStudent.filter((n) => n.marks > 50);
     setStudent(passData);
     console.log(passData);
   };
   const onFail = () => {
-    let failData = students.filter((n) => n.marks < 50);
+    let failData = allStudent.filter((n) => n.marks < 50);
     setStudent(failData);
   };
   console.log(student);
