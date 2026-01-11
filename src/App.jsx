@@ -1,8 +1,11 @@
-import React from "react";
-import UseEffect from "./UseEffect";
+import FinalResult from "./components/FinalResult";
 
 function App() {
-  return <div>{/* <UseEffect /> */}</div>;
+  return (
+    <div>
+      <FinalResult />
+    </div>
+  );
 }
 
 export default App;

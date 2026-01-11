@@ -49,7 +49,7 @@ function FinalResult() {
   const [student, setStudent] = useState(allStudent);
 
   const onReset = () => {
-    console.log("clicked me");
+    // console.log("clicked me");
 
     setStudent(allStudent);
   };
@@ -57,13 +57,13 @@ function FinalResult() {
   const onPass = () => {
     let passData = allStudent.filter((n) => n.marks > 50);
     setStudent(passData);
-    console.log(passData);
+    // console.log(passData);
   };
   const onFail = () => {
     let failData = allStudent.filter((n) => n.marks < 50);
     setStudent(failData);
   };
-  console.log(student);
+  // console.log(student);
 
   return (
     <>
