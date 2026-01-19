@@ -1,0 +1,140 @@
+{
+  "name": "All Learning Tasks",
+  "data": [
+    {
+      "userId": 1,
+      "id": 1,
+      "title": "Learn JavaScript Basics",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "title": "Build a Portfolio Website",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "title": "Master CSS Grid and Flexbox",
+      "completed": false
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "title": "Learn ES6 Features",
+      "completed": true
+    },
+    {
+      "userId": 1,
+      "id": 5,
+      "title": "Practice DOM Manipulation",
+      "completed": false
+    },
+    {
+      "userId": 2,
+      "id": 6,
+      "title": "Create a ToDo App with React",
+      "completed": true
+    },
+    {
+      "userId": 2,
+      "id": 7,
+      "title": "Learn Node.js and Express",
+      "completed": false
+    },
+    {
+      "userId": 2,
+      "id": 8,
+      "title": "Connect Frontend to Backend API",
+      "completed": false
+    },
+    {
+      "userId": 2,
+      "id": 9,
+      "title": "Implement JWT Authentication",
+      "completed": true
+    },
+    {
+      "userId": 2,
+      "id": 10,
+      "title": "Learn RESTful API Design",
+      "completed": false
+    },
+    {
+      "userId": 3,
+      "id": 11,
+      "title": "Deploy App to Netlify",
+      "completed": false
+    },
+    {
+      "userId": 3,
+      "id": 12,
+      "title": "Learn MongoDB Basics",
+      "completed": true
+    },
+    {
+      "userId": 3,
+      "id": 13,
+      "title": "Implement User Authentication",
+      "completed": false
+    },
+    {
+      "userId": 3,
+      "id": 14,
+      "title": "Optimize App Performance",
+      "completed": true
+    },
+    {
+      "userId": 3,
+      "id": 15,
+      "title": "Learn Redux for State Management",
+      "completed": false
+    },
+    {
+      "userId": 4,
+      "id": 16,
+      "title": "Build a Weather App with API",
+      "completed": true
+    },
+    {
+      "userId": 4,
+      "id": 17,
+      "title": "Create a Quiz App in React",
+      "completed": false
+    },
+    {
+      "userId": 4,
+      "id": 18,
+      "title": "Learn TypeScript Basics",
+      "completed": true
+    },
+    {
+      "userId": 4,
+      "id": 19,
+      "title": "Integrate Payment Gateway",
+      "completed": false
+    },
+    {
+      "userId": 4,
+      "id": 20,
+      "title": "Write Unit Tests with Jest",
+      "completed": true
+    },
+    {
+      "id": "96a9",
+      "title": "JavaScript",
+      "completed": false
+    },
+    {
+      "id": "5c03",
+      "title": "Python",
+      "completed": false
+    },
+    {
+      "id": "8101",
+      "title": "muhammad Farooq",
+      "completed": false
+    }
+  ]
+}
