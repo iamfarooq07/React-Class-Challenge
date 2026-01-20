@@ -19,13 +19,35 @@ export function ContextProvider({ children }) {
     fetchTodos();
   }, [url]);
 
-  const addTodo = async (title) => {
+  // const addTodo = async (title, completed = false) => {
+  //   try {
+  //     const res = await axios.post(url, {
+  //       title,
+  //       completed,
+  //     });
+
+  //     const newTodo = {
+  //       ...res.data,
+  //       completed, // user ka value enforce
+  //     };
+
+  //     setTodo((prev) => [...prev, newTodo]);
+  //   } catch (err) {
+  //     console.error("Failed to add todo:", err);
+  //   }
+  // };
+
+  const addTodo = async (title, completed = false) => {
     try {
       const res = await axios.post(url, {
         title,
         completed: false,
       });
-      setTodo((prev) => [...prev, res.data]);
+      const newTodo = {
+        ...res.data,
+        completed,
+      };
+      setTodo((prev) => [...prev, newTodo]);
     } catch (err) {
       console.error("Failed to add todo:", err);
     }
